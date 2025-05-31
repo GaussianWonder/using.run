@@ -2,18 +2,21 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "editor.quickSuggestions": {
-    "strings": true
-  },
+  "css.customData": [".vscode/tailwind.json"],
+  "scss.lint.unknownAtRules": "ignore",
   "tailwindCSS.experimental.classRegex": [
     "tw`(.*?)`",
     "tw\\('(.*?)'\\)",
     "tw\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"
   ],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "files.exclude": {
     "**/node_modules": true,
     "**/.nuxt": true,
     "**/.data": true,
+    "**/.dist": true,
     "**/.output": true,
     "**/*.tsbuildinfo": true,
     "**/.git": true
@@ -22,6 +25,7 @@
     "**/node_modules": true,
     "**/.nuxt": true,
     "**/.data": true,
+    "**/.dist": true,
     "**/.output": true,
     "**/*.tsbuildinfo": true,
     "**/*.code-search": true
