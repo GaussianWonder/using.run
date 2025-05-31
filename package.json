@@ -13,14 +13,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "code:fix": "biome check --unsafe --fix",
+    "code:check": "biome check"
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
     "@nuxt/icon": "1.13.0",
     "@nuxt/image": "1.10.0",
+    "@nuxtjs/tailwindcss": "7.0.0-beta.0",
     "nuxt": "^3.17.4",
     "vue": "^3.5.15",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
   }
 }
