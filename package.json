@@ -2,6 +2,12 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "author": {
+    "email": "teo.virghi@yahoo.ro",
+    "name": "Teodor Virghileanu",
+    "url": "https://github.com/GaussianWonder"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
