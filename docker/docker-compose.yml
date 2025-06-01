@@ -1,0 +1,14 @@
+services:
+  using.run:
+    container_name: using.run
+    hostname: using.run
+    build:
+      context: ..
+      dockerfile: ./docker/build.dockerfile
+      args:
+        - PORT=3000
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+    restart: unless-stopped

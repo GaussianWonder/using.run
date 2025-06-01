@@ -4,6 +4,7 @@
   },
   "css.customData": [".vscode/tailwind.json"],
   "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
   "tailwindCSS.experimental.classRegex": [
     "tw`(.*?)`",
     "tw\\('(.*?)'\\)",
@@ -17,6 +18,7 @@
     "**/.nuxt": true,
     "**/.data": true,
     "**/.dist": true,
+    "**/dist": true,
     "**/.output": true,
     "**/*.tsbuildinfo": true,
     "**/.git": true
@@ -26,6 +28,7 @@
     "**/.nuxt": true,
     "**/.data": true,
     "**/.dist": true,
+    "**/dist": true,
     "**/.output": true,
     "**/*.tsbuildinfo": true,
     "**/*.code-search": true
