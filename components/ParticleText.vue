@@ -21,13 +21,7 @@ const pixiInit = (): Partial<ApplicationOptions> => ({
 const pixi = usePixiRef();
 
 const device = useDevice();
-const width = Math.max(
-  document.body.scrollWidth,
-  document.documentElement.scrollWidth,
-  document.body.offsetWidth,
-  document.documentElement.offsetWidth,
-  document.documentElement.clientWidth,
-);
+const { width } = useScreenBbox();
 const maxFontSize = width * 0.1953125;
 const desiredFontSize = (() => {
   if (device.isMobile) return 80;
