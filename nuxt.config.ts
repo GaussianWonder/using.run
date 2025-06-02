@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
-    "@hypernym/nuxt-anime",
     "@vueuse/nuxt",
     "@nuxtjs/device",
   ],
