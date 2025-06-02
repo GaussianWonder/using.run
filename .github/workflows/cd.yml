@@ -1,0 +1,26 @@
+name: CD
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  cd:
+    runs-on: prod
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Echo
+        run: whoami
+
+      - name: Test
+        run: docker context ls
+
+      - name: Test2
+        run: docker context ls
+        shell: bash
+
+      - name: Docker context
+        run: docker context use prod
+        shell: bash
