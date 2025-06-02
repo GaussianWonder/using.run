@@ -11,16 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Echo
-        run: whoami
+      - name: Down
+        run: docker compose -f ./docker/docker-compose.yml down || echo "Nothing to do"
 
-      - name: Test
-        run: docker context ls
-
-      - name: Test2
-        run: docker context ls
-        shell: bash
-
-      - name: Docker context
-        run: docker context use prod
-        shell: bash
+      - name: Up
+        run: docker compose -f ./docker/docker-compose.yml up --build
