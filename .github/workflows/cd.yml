@@ -5,7 +5,7 @@ on:
   
 jobs:
   cd:
-    runs-on: prod
+    runs-on: self-hosted
 
     steps:
       - name: Checkout
