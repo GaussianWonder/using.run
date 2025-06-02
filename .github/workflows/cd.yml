@@ -15,4 +15,4 @@ jobs:
         run: docker compose -f ./docker/docker-compose.yml down || echo "Nothing to do"
 
       - name: Up
-        run: docker compose -f ./docker/docker-compose.yml up --build
+        run: docker compose -f ./docker/docker-compose.yml up --build -d
