@@ -50,7 +50,7 @@
         "useConsistentArrayType": "error",
         "useConst": "error",
         "useExportType": "error",
-        "useFilenamingConvention": "error",
+        "useFilenamingConvention": "off",
         "useImportType": "error",
         "useNamingConvention": "off",
         "useNodejsImportProtocol": "error",

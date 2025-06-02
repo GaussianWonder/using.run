@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@hypernym/nuxt-anime",
     "@vueuse/nuxt",
+    "@nuxtjs/device",
   ],
   nitro: {
     preset: "bun",
@@ -23,6 +24,12 @@ export default defineNuxtConfig({
     devtools: process.env.NODE_ENV !== "production",
     defaults: {
       preload: true,
+    },
+  },
+  runtimeConfig: {
+    public: {
+      particleFont:
+        "https://cdn.fontshare.com/wf/SVYQ5C47KQ7Q4A6527WD7JA6PUG6HK55/I2UFEJWWBDNRZ5HKD3V4ASSUY3YYEMOJ/JEWCW7XRBNTGIANRIQOD4DIZJG4HEHFJ.ttf",
     },
   },
 });

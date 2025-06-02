@@ -1,9 +1,9 @@
 <template>
-  <app class="w-screen h-screen flex flex-col bg-[#e6d9cc]">
+  <div class="w-screen h-screen flex flex-col bg-[#e6d9cc]">
     <header><slot name="header" /></header>
     <main class="grow"><slot /></main>
     <footer><slot name="footer" /></footer>
-  </app>
+  </div>
 </template>
 
 <style lang="css">
