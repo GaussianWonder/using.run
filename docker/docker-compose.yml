@@ -13,9 +13,9 @@ services:
       PORT: 3000
     restart: unless-stopped
     networks:
-      - ix-nginx-proxy-manager
+      - npm
 
 networks:
-  ix-nginx-proxy-manager:
-    name: ix-nginx-proxy-manager
+  npm:
+    name: ix-nginx-proxy-manager_default
     external: true
