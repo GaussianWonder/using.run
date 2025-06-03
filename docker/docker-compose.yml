@@ -1,7 +1,7 @@
 services:
-  using.run:
-    container_name: using.run
-    hostname: using.run
+  landing_page:
+    container_name: landing_page
+    hostname: landing_page
     build:
       context: ..
       dockerfile: ./docker/build.dockerfile
@@ -12,3 +12,10 @@ services:
     environment:
       PORT: 3000
     restart: unless-stopped
+    networks:
+      - ix-nginx-proxy-manager
+
+networks:
+  ix-nginx-proxy-manager:
+    name: ix-nginx-proxy-manager
+    external: true
